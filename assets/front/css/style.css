@@ -1,0 +1,49 @@
+.garis1 {
+    padding: 20px 40px;
+    
+}
+
+.garis2  {
+    list-style: none;
+}
+
+.garis3  {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.garis3 .garis4 {
+    color: white;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.garis3::after {
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width .5s;
+
+}
+
+.garis3 .garis4:hover  {
+    color: yellow;
+}
+
+.garis3:hover::after {
+    width: 100%;
+    background-color: yellow;
+
+}
+
+.ikon {
+    color: black;
+}
+.ikon:hover {
+    color:rgb(243, 81, 7);
+}
